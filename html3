@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bayview Surf School - About</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #e6f0fa;
+      color: #02457a;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      border-bottom: 3px solid #0288d1;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    .instructors {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+    .instructor {
+      background: white;
+      border-radius: 8px;
+      padding: 1rem;
+      width: 280px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .instructor img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      border: 3px solid #0288d1;
+    }
+    .instructor h3 {
+      margin: 0.5rem 0 0.3rem;
+      color: #014e76;
+    }
+    .instructor p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+    header nav ul.nav-list {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      list-style: none;
+      margin: 0;
+      padding: 1rem 2rem;
+      background: #0288d1;
+    }
+    header nav ul.nav-list li a {
+      color: white;
+      font-size: 1.2rem;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    header nav ul.nav-list li a:hover,
+    header nav ul.nav-list li a[aria-current="page"] {
+      background-color: #0265a0;
+    }
+    @media (max-width: 700px) {
+      .instructors {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Our Instructors</h2>
+      <div class="instructors">
+        <div class="instructor">
+          <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Photo of Jack Harper" />
+          <h3>Jack Harper</h3>
+          <p>Founder and lead instructor with 15 years surfing experience.</p>
+        </div>
+        <div class="instructor">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Photo of Mia Torres" />
+          <h3>Mia Torres</h3>
+          <p>Advanced coach specializing in wave technique and performance.</p>
+        </div>
+        <div class="instructor">
+          <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Photo of Liam Chen" />
+          <h3>Liam Chen</h3>
+          <p>Board rental manager and surf safety expert.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p style="text-align:center; background:#02457a; color:white; padding:1rem 0; margin:0;">
+      &copy; 2025 Bayview Surf School | Located on the beautiful Bunbury coast
+    </p>
+  </footer>
+</body>
+</html>
